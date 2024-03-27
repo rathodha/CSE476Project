@@ -3,5 +3,8 @@
     <string name="client_id">405899521195-t2m5dj935qkmbmhojcishue4rji18crg.apps.googleusercontent.com</string>
     <string name="sign_out">Sign Out</string>
     <string name="Hair">HAIR</string>
-    <string name="welcome">WELCOME</string>
+    <string name="welcome">Welcome to</string>
+    <string name="spartanconnect">SPARTAN CONNECT</string>
+    <string name="Nails">NAILS</string>
+    <string name="Tutoring">TUTORING</string>
 </resources>
