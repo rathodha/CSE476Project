@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
     tools:context=".InitialPage">
 
     <TextView
@@ -29,30 +30,66 @@
     <Button
         android:id="@+id/hairbutton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_below="@id/spartanconnect"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="@string/Hair" />
+        android:text="@string/Hair"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textSize="25dp" />
     <Button
         android:id="@+id/nailsbutton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_below="@id/hairbutton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="@string/Nails" />
+        android:text="@string/Nails"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
     <Button
         android:id="@+id/tutoringbutton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_below="@id/nailsbutton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="@string/Tutoring" />
+        android:text="@string/Tutoring"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@+id/tutoringbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/spartan_logo"
+        />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/profile"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
 
 
 </RelativeLayout>
