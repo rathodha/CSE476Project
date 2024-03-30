@@ -2,7 +2,10 @@ package msu.edu.rathodha.cse476project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class InitialPage extends AppCompatActivity {
 
@@ -10,5 +13,15 @@ public class InitialPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial_page);
+
+        Button hairButton = findViewById(R.id.hairbutton);
+        hairButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InitialPage.this, Hair.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

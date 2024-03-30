@@ -8,4 +8,8 @@
     <string name="Nails">NAILS</string>
     <string name="Tutoring">TUTORING</string>
     <string name="profile">Profile</string>
+    <string name="Hair_name">Name:</string>
+    <string name="Hair_service_offered">Service Offered:</string>
+    <string name="Hair_address">Address:</string>
+    <string name="Hair_price_per_hour">Price per Hour:</string>
 </resources>
