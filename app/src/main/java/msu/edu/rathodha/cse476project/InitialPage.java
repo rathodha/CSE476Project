@@ -23,5 +23,15 @@ public class InitialPage extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button nailsButton  = findViewById(R.id.nailsbutton);
+        nailsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InitialPage.this, Nail.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

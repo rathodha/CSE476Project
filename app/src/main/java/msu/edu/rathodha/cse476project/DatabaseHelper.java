@@ -32,12 +32,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     private void insertInitialValues(SQLiteDatabase db) {
-        ContentValues values = new ContentValues();
-        values.put(COLUMN_NAME, "John Doe");
-        values.put(COLUMN_SERVICE_OFFERED, "Haircuts, Coloring");
-        values.put(COLUMN_ADDRESS, "Wilson Hall, MSU");
-        values.put(COLUMN_PRICE_PER_HOUR, 25.0);
-        db.insert(TABLE_NAME, null, values);
+        ContentValues Hairvalues = new ContentValues();
+        Hairvalues.put(COLUMN_NAME, "John Doe");
+        Hairvalues.put(COLUMN_SERVICE_OFFERED, "Haircuts, Coloring");
+        Hairvalues.put(COLUMN_ADDRESS, "Wilson Hall, MSU");
+        Hairvalues.put(COLUMN_PRICE_PER_HOUR, 25.0);
+        db.insert(TABLE_NAME, null, Hairvalues);
+
+        ContentValues nailsValues = new ContentValues();
+        nailsValues.put(COLUMN_NAME, "Jane Smith");
+        nailsValues.put(COLUMN_SERVICE_OFFERED, "Nail Art, Manicure");
+        nailsValues.put(COLUMN_ADDRESS, "Main Street, MSU");
+        nailsValues.put(COLUMN_PRICE_PER_HOUR, 30.0);
+        db.insert(TABLE_NAME, null, nailsValues);
     }
 
     @Override
