@@ -17,7 +17,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/nameLabel"
+        android:id="@+id/HairNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/hair"
@@ -28,19 +28,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/HairNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nameLabel"
+        android:layout_below="@id/HairNameLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/serviceOfferedLabel"
+        android:id="@+id/HairServiceOfferedLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nameTextView"
+        android:layout_below="@id/HairNameTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_service_offered"
@@ -48,19 +48,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/serviceOfferedTextView"
+        android:id="@+id/HairServiceOfferedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/serviceOfferedLabel"
+        android:layout_below="@id/HairServiceOfferedLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/addressLabel"
+        android:id="@+id/HairAddressLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/serviceOfferedTextView"
+        android:layout_below="@id/HairServiceOfferedTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_address"
@@ -68,19 +68,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/addressTextView"
+        android:id="@+id/HairAddressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addressLabel"
+        android:layout_below="@id/HairAddressLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/pricePerHourLabel"
+        android:id="@+id/HairPricePerHourLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addressTextView"
+        android:layout_below="@id/HairAddressTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_price_per_hour"
@@ -88,18 +88,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/pricePerHourTextView"
+        android:id="@+id/HairPricePerHourTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pricePerHourLabel"
+        android:layout_below="@id/HairPricePerHourLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
+
     <Button
         android:id="@+id/Route"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_below="@id/pricePerHourTextView"
+        android:layout_below="@id/HairPricePerHourTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"

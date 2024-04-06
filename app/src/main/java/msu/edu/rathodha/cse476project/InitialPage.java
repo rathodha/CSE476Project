@@ -33,5 +33,15 @@ public class InitialPage extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button tutoringButton  = findViewById(R.id.tutoringbutton);
+        tutoringButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InitialPage.this, Tutoring.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

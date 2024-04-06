@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Nail extends AppCompatActivity {
+public class Tutoring extends AppCompatActivity {
 
     private DatabaseHelper databaseHelper;
     private TextView nameTextView, serviceOfferedTextView, addressTextView, pricePerHourTextView;
@@ -15,33 +15,33 @@ public class Nail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nail);
+        setContentView(R.layout.activity_tutoring);
 
         // Instantiate the DatabaseHelper
         databaseHelper = new DatabaseHelper(this);
 
         // Initialize TextViews
-        nameTextView = findViewById(R.id.NailNameTextView);
-        serviceOfferedTextView = findViewById(R.id.NailServiceOfferedTextView);
-        addressTextView = findViewById(R.id.NailAddressTextView);
-        pricePerHourTextView = findViewById(R.id.NailPricePerHourTextView);
+        nameTextView = findViewById(R.id.TutoringNameTextView);
+        serviceOfferedTextView = findViewById(R.id.TutoringServiceOfferedTextView);
+        addressTextView = findViewById(R.id.TutoringAddressTextView);
+        pricePerHourTextView = findViewById(R.id.TutoringPricePerHourTextView);
 
         // Insert nail service data into the database
-        insertNailServiceData();
+        insertHairServiceData();
 
         // Display nail service data from the database
-        displayNailServiceData();
+        displayHairServiceData();
     }
 
-    private void insertNailServiceData() {
+    private void insertHairServiceData() {
         // Insert nail service data into the database
-        databaseHelper.addService("John Doe", "Manicure", "456 Elm St", 30.0);
+        databaseHelper.addService("Paul Rudd", "CSE 476", "West Holmes Hall, MSU", 40.0);
     }
 
     @SuppressLint("SetTextI18n")
-    private void displayNailServiceData() {
+    private void displayHairServiceData() {
         // Retrieve nail service data from the database
-        Cursor cursor = databaseHelper.getServiceByName("John Doe");
+        Cursor cursor = databaseHelper.getServiceByName("Paul Rudd");
 
         // Check if cursor is not null and move to the first row
         if (cursor != null && cursor.moveToFirst()) {

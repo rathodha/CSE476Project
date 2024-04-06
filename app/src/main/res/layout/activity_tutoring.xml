@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Nail">
+    tools:context=".Tutoring">
 
     <TextView
-        android:id="@+id/nail"
+        android:id="@+id/tutoring"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/Nails"
+        android:text="@string/tutoring"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="50sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/NailNameLabel"
+        android:id="@+id/TutoringNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nail"
+        android:layout_below="@id/tutoring"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_name"
@@ -28,19 +28,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/NailNameTextView"
+        android:id="@+id/TutoringNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailNameLabel"
+        android:layout_below="@id/TutoringNameLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/NailServiceOfferedLabel"
+        android:id="@+id/TutoringServiceOfferedLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailNameTextView"
+        android:layout_below="@id/TutoringNameTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_service_offered"
@@ -48,19 +48,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/NailServiceOfferedTextView"
+        android:id="@+id/TutoringServiceOfferedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailServiceOfferedLabel"
+        android:layout_below="@id/TutoringServiceOfferedLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/NailAddressLabel"
+        android:id="@+id/TutoringAddressLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailServiceOfferedTextView"
+        android:layout_below="@id/TutoringServiceOfferedTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_address"
@@ -68,19 +68,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/NailAddressTextView"
+        android:id="@+id/TutoringAddressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailAddressLabel"
+        android:layout_below="@id/TutoringAddressLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
 
     <TextView
-        android:id="@+id/NailPricePerHourLabel"
+        android:id="@+id/TutoringPricePerHourLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailAddressTextView"
+        android:layout_below="@id/TutoringAddressTextView"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_price_per_hour"
@@ -88,10 +88,10 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/NailPricePerHourTextView"
+        android:id="@+id/TutoringPricePerHourTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/NailPricePerHourLabel"
+        android:layout_below="@id/TutoringPricePerHourLabel"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"/>
@@ -100,7 +100,7 @@
         android:id="@+id/Route"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_below="@id/NailPricePerHourTextView"
+        android:layout_below="@id/TutoringPricePerHourTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
