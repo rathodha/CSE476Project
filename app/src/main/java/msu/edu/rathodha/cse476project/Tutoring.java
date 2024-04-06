@@ -1,8 +1,10 @@
 package msu.edu.rathodha.cse476project;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -75,5 +77,11 @@ public class Tutoring extends AppCompatActivity {
         // Close the database connection when the activity is destroyed
         databaseHelper.close();
         super.onDestroy();
+    }
+
+    public void onBackClick(View view) {
+        Intent intent = new Intent(this, InitialPage.class);
+        startActivity(intent);
+        finish();
     }
 }

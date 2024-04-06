@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Nail">
 
+    <Button
+        android:id="@+id/NailBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:onClick="onBackClick"/>
+
     <TextView
         android:id="@+id/nail"
         android:layout_width="wrap_content"
@@ -14,7 +21,8 @@
         android:text="@string/Nails"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@id/NailBack"/>
 
     <TextView
         android:id="@+id/NailNameLabel"
