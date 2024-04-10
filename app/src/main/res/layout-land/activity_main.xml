@@ -40,20 +40,23 @@
         android:textSize="30sp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spartanconnect"
+        android:text="@string/slogan"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#18453B"/>
+
     <com.google.android.gms.common.SignInButton
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/logo"
+        android:layout_below="@+id/slogan"
         android:layout_marginTop="50sp"
         android:id="@+id/signIn"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/signIn"
-        android:id="@+id/signout"
-        android:text="@string/sign_out" />
 
 </RelativeLayout>

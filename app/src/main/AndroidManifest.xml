@@ -17,6 +17,9 @@
         android:theme="@style/Theme.CSE476Project"
         tools:targetApi="31">
         <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
             android:name=".Tutoring"
             android:exported="false" />
         <activity

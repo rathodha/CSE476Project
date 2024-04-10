@@ -15,4 +15,7 @@
     <string name="route">SEE THE ROUTE</string>
     <string name="tutoring">TUTORING</string>
     <string name="back">Back</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="hello">Hello!</string>
+    <string name="slogan">Your one stop solution for Spartan Student Services!</string>
 </resources>

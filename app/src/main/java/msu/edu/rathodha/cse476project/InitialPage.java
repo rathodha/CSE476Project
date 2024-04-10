@@ -43,5 +43,15 @@ public class InitialPage extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button profileButton  = findViewById(R.id.profileButton);
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InitialPage.this, UserProfile.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
