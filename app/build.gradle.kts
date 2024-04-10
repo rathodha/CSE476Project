@@ -9,10 +9,11 @@ android {
 
     defaultConfig {
         applicationId = "msu.edu.rathodha.cse476project"
-        minSdk = 24
+        minSdk = 19
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -41,4 +42,5 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
     implementation("com.google.firebase:firebase-storage:20.3.0")
+    implementation("androidx.multidex:multidex:2.0.1")
 }
