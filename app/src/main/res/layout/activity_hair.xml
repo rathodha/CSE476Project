@@ -19,8 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="50sp"
+        android:textColor="#18453B"
         android:textStyle="bold"
         android:layout_below="@id/HairBack"/>
 

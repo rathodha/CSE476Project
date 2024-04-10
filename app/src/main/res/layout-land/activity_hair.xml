@@ -4,119 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tutoring">
+    tools:context=".Hair">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/msu"
+        android:scaleType="centerCrop" />
 
     <Button
-        android:id="@+id/TutoringBack"
+        android:id="@+id/HairBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back"
         android:onClick="onBackClick"/>
 
     <TextView
-        android:id="@+id/tutoring"
+        android:id="@+id/hair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/tutoring"
+        android:text="@string/Hair"
         android:textColor="#18453B"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/TutoringBack"/>
+        android:layout_below="@id/HairBack"/>
 
     <TextView
-        android:id="@+id/TutoringNameLabel"
+        android:id="@+id/HairNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tutoring"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/hair"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_name"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/TutoringNameTextView"
+        android:id="@+id/HairNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringNameLabel"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairNameLabel"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/TutoringServiceOfferedLabel"
+        android:id="@+id/HairServiceOfferedLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringNameTextView"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairNameTextView"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_service_offered"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/TutoringServiceOfferedTextView"
+        android:id="@+id/HairServiceOfferedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringServiceOfferedLabel"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairServiceOfferedLabel"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/TutoringAddressLabel"
+        android:id="@+id/HairAddressLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringServiceOfferedTextView"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairServiceOfferedTextView"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_address"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/TutoringAddressTextView"
+        android:id="@+id/HairAddressTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringAddressLabel"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairAddressLabel"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/TutoringPricePerHourLabel"
+        android:id="@+id/HairPricePerHourLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringAddressTextView"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairAddressTextView"
         android:layout_centerHorizontal="true"
         android:text="@string/Hair_price_per_hour"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/TutoringPricePerHourTextView"
+        android:id="@+id/HairPricePerHourTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TutoringPricePerHourLabel"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/HairPricePerHourLabel"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
     <Button
-        android:id="@+id/TutoringMap"
+        android:id="@+id/HairMap"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_below="@id/TutoringPricePerHourTextView"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HairPricePerHourTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
         android:text="@string/route"
         android:backgroundTint="@android:color/black"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:textSize="25dp"
+        android:textSize="18sp"
         android:onClick="startGoogleMaps"/>
 
 </RelativeLayout>
