@@ -1,5 +1,6 @@
 package msu.edu.rathodha.cse476project;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -69,6 +70,16 @@ public class UserProfile extends AppCompatActivity {
 
         logoImage = findViewById(R.id.SignOutLogo);
         downloadImage();
+
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this, InitialPage.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void downloadImage() {
