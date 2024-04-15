@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -68,6 +69,16 @@ public class Tutoring extends AppCompatActivity {
 
         locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
+
+        Button bookButton = findViewById(R.id.bookButton);
+        bookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tutoring.this, Request.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void startGoogleMaps(View view) {

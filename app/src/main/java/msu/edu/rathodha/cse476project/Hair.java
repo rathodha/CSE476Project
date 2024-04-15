@@ -69,6 +69,16 @@ public class Hair extends AppCompatActivity {
 
         locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
+
+        Button bookButton = findViewById(R.id.bookButton);
+        bookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Hair.this, Request.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void startGoogleMaps(View view) {

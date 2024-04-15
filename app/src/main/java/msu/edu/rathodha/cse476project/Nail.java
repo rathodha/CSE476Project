@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -111,6 +112,16 @@ public class Nail extends AppCompatActivity {
             addressTextView.setText("");
             pricePerHourTextView.setText("");
         }
+
+        Button bookButton = findViewById(R.id.bookButton);
+        bookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Nail.this, Request.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestCancel"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:width="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/requestCancel"
+        />
+
+    <TextView
+        android:id="@+id/textViewNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewNameLabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/requestCancel"
+        android:width="120dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNameLabel"
+        android:layout_marginTop="50dp"
+        android:text="@string/date"
+        android:textStyle="bold"
+        android:width="120dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNameValue"
+        android:layout_toRightOf="@id/textViewDateLabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:width="120dp" />
+
+    <TextView
+        android:id="@+id/textViewTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDateLabel"
+        android:layout_marginTop="50dp"
+        android:text="@string/time"
+        android:textStyle="bold"
+        android:width="120dp"/>
+
+    <TextView
+        android:id="@+id/textViewTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDateValue"
+        android:layout_toRightOf="@id/textViewTimeLabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:width="120dp" />
+
+    <TextView
+        android:id="@+id/textViewCommentsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTimeLabel"
+        android:layout_marginTop="50dp"
+        android:text="@string/other_comments"
+        android:textStyle="bold"
+        android:width="120dp"/>
+
+    <TextView
+        android:id="@+id/textViewCommentsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTimeValue"
+        android:layout_toRightOf="@id/textViewCommentsLabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:width="120dp" />
+
+    <Button
+        android:id="@+id/buttonRequestService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/request_service"
+        android:layout_below="@id/textViewCommentsValue"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

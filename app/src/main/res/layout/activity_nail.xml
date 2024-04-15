@@ -119,4 +119,17 @@
         android:textSize="25dp"
         android:onClick="startGoogleMaps"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookButton"
+        android:layout_below="@id/NailMap"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/book"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:backgroundTint="@android:color/black" />
+
 </RelativeLayout>

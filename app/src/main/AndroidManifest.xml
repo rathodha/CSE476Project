@@ -33,6 +33,9 @@
             android:name=".InitialPage"
             android:exported="false" />
         <activity
+            android:name=".Request"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -12,7 +12,20 @@
           "package_name": "msu.edu.rathodha.cse476project"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "405899521195-p7j13207fli5jupispkh6ngkhos2kfj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "msu.edu.rathodha.cse476project",
+            "certificate_hash": "a5ef21f9ca8535db80bea4bd8879ee6391ec8a90"
+          }
+        },
+        {
+          "client_id": "405899521195-t2m5dj935qkmbmhojcishue4rji18crg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC7BaOKGajoePfDttDBFMiCakGgUC99BQE"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405899521195-t2m5dj935qkmbmhojcishue4rji18crg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
