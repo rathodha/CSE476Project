@@ -16,12 +16,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Request extends AppCompatActivity {
+    SharedPreferences sharedPreferences;
     @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         String displayName = sharedPreferences.getString("displayName", "");
 
         TextView nameTextView = findViewById(R.id.textViewNameValue);
@@ -61,6 +62,13 @@ public class Request extends AppCompatActivity {
                 String time = textViewTimeValue.getText().toString().trim();
                 if (!date.isEmpty() && !time.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Request Sent", Toast.LENGTH_SHORT).show();
+
+                    sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("date", date);
+                    editor.putString("time", time);
+                    editor.apply();
+
                     Intent intent = new Intent(Request.this, InitialPage.class);
                     startActivity(intent);
                     finish();
@@ -84,8 +92,6 @@ public class Request extends AppCompatActivity {
     private void showInputDialog(final TextView textView) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Enter Value");
-
-        // Create an EditText view for user input
         final EditText input = new EditText(this);
         builder.setView(input);
 

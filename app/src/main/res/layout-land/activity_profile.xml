@@ -30,8 +30,17 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/SignOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestTable"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/hiMessage"
+        android:text="@string/view_pending_requests"/>
+
+    <Button
+        android:id="@+id/SignOutButton"
+        android:layout_below="@+id/requestTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_out_text"

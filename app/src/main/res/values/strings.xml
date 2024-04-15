@@ -27,4 +27,5 @@
     <string name="cancel">Cancel</string>
     <string name="book">Book</string>
     <string name="back_to_main_page">Back to Main Page</string>
+    <string name="view_pending_requests">View Pending Requests</string>
 </resources>

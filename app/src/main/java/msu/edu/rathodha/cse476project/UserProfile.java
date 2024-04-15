@@ -80,6 +80,16 @@ public class UserProfile extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button requestTableButton = findViewById(R.id.requestTable);
+        requestTableButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this, RequestTable.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void downloadImage() {
