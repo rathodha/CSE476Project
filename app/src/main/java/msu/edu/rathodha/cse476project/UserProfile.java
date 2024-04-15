@@ -97,8 +97,5 @@ public class UserProfile extends AppCompatActivity {
                                 .into(logoImage);
                     }
                 });
-//                .addOnFailureListener(e -> {;
-//                    Toast.makeText(UserProfile.this, "Failed to download image", Toast.LENGTH_SHORT).show();
-//                });
     }
 }
